@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap');
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 98vh;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+}
+
+h2 {
+    font-family: "Space Grotesk", Arial, sans-serif;
+    color: #278252;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+form {
+    background-color: #f5f6f9;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 400px;
+    flex-flow: column;
+}
+
+.form-group {
+    position: relative;
+    margin: 12px 0;
+}
+
+.form-group input {
+    padding: 8px 10px;
+    font-size: 18px;
+font-family: "Space Grotesk", Arial, sans-serif;
+    border-radius: 5px;
+    border: #000000 solid 2px;
+    background-color: transparent;
+    color: rgb(0, 0, 0);
+    transition: 0.15s all ease;
+}
+
+.form-group input:focus {
+    border-color: rgb(0, 0, 0);
+}
+
+.form-group input::placeholder {
+    color: transparent;
+}
+
+.form-group .form-label {
+    position: absolute;
+    top: 9px;
+    left: 0;
+    font-size: 18px;
+    font-family: "Space Grotesk", Arial, sans-serif;
+    padding: 0 10px;
+    color: #000000;
+    pointer-events: none;
+    transition: 0.15s all ease;
+}
+.form-group input:focus + .form-label,
+.form-group input:not(:placeholder-shown) + 
+.form-label {
+    transform: translate(5px, -22px);
+    background-color: #f5f6f9;
+    font-size: 18px;
+    color: rgb(0, 0, 0);
+}
+
+.form-group button {
+    padding: 8px 10px;
+    border: none;
+    border-radius: 18px;
+    background-color: #17a54d;
+    color: #fff;
+    font-size: 18px;
+    font-family: "Space Grotesk", Arial, sans-serif;
+    cursor: pointer;
+}
+
+.form-group button:hover {
+    background-color: #24be5f;
+}
+
+button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.error-message {
+    color:#278252;
+    margin-top: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    h2 {
+        font-size: 20px;
+    }
+
+    input {
+        padding: 8px;
+    }
+  
+    button {
+      padding: 8px;
+      font-size: 14px;
+    }
+}
+  
